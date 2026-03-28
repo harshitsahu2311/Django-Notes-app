@@ -87,8 +87,6 @@ WSGI_APPLICATION = 'notesapp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    
 if os.getenv("DB_NAME"):
     DATABASES = {
         'default': {
@@ -107,8 +105,6 @@ else:
             'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
-    
-}
 
 
 # Password validation
